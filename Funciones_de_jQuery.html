@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+        #parrafo1 {
+            width: 400px;
+            height: 90px;
+        }
+        
+        #div {
+            font-size: 24px;
+            text-align: center;
+            display: none;
+        }
+        
+        #span {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="fila1 row p-3 mb-2 bg-dark text-white">
+            <div class="col-3 align-center text-center mt-4">
+                <button type="button" class="boton1 btn btn-light">Add class</button></div>
+            <div class=" col-9 text-white ">
+                <h1>AddClass</h1>
+                <p>Haz Click en el boton para agregar una clase 'red' a este parrafo</p>
+            </div>
+        </div>
+
+        <div class="fila2 row p-3 mb-2 bg-white text-dark">
+            <div class=" col-3 align-center text-center mt-4 ">
+                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="boton2 btn btn-dark ">SlideToggle</button>
+                    <button type="button" class="boton3 btn btn-dark ">SlideUp</button>
+                    <button type="button" class="boton4 btn btn-dark ">SlideDown</button>
+                </div>
+            </div>
+            <div class=" col-9 text-black ">
+                <h1>Slidetoggle</h1>
+                <p>Haz Click en el boton para esconder la imagen</p>
+                <img class="imagen1" src="nasa1.jpg" height="200px" width="400px">
+            </div>
+        </div>
+
+
+        <div class="fila3 row p-3 mb-2 bg-dark text-white">
+            <div class="col-3 align-center text-center mt-4">
+                <button type="button" class="boton5 btn btn-light">Append</button></div>
+            <div class="append col-9 text-white ">
+                <h1>Append</h1>
+                <p>Haz Click en el boton para agregar un nuevo parrafo</p>
+            </div>
+        </div>
+
+
+
+        <div class="fila4 row p-3 mb-2 bg-white text-dark">
+            <div class=" col-3 align-center text-center mt-4 ">
+                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="boton8 btn btn-dark ">Slide</button>
+                    <button type="button" class="boton6 btn btn-dark ">Show</button>
+                    <button type="button" class="boton7 btn btn-dark ">Hide</button>
+
+                </div>
+            </div>
+            <div class=" col-9 text-black ">
+                <h1>Show/Hide</h1>
+                <p>Haz Click en los botones para interactuar con la imagen</p>
+                <img class="imagen2" src="nasa2.jpg" height="150px" width="650px">
+            </div>
+        </div>
+
+        <div class="fila5 row p-3 mb-2 bg-dark text-white">
+            <div class="col-3 align-center text-center mt-4">
+
+                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="boton9 btn btn-light">FadeIn</button>
+                    <button type="button" class="boton10 btn btn-dark ">FadeOut</button>
+                </div>
+            </div>
+            <div class=" col-9 text-white ">
+                <h1>Fade In / Fade Out</h1>
+                <p>Haz Click en el boton para agregar una clase 'red' a este parrafo
+                    <div id="div" class="align-center text-center pt-1 bg-white text-dark">
+                        <span id="span" class=""><b>¡Felicidades!</b> <br> Haz hecho tu primer Fade In</span>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="fila6 row p-3 mb-2 bg-white text-dark">
+            <div class="col-3 align-center text-center mt-4">
+
+                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="boton11 btn btn-dark">Before</button>
+                    <button type="button" class="boton12 btn btn-dark ">After</button>
+                </div>
+            </div>
+            <div class=" col-9 text-dark ">
+                <h1 id="titulo">Before / After</h1>
+                <p class="parrafo1">Haz Click en el boton after para posicionar el titulo debajo del texto.</p>
+                <p class="parrafo2">Haz Click en el boton Before para volver el titulo arriba del texto.</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="fila7 row p-3 mb-2 bg-dark text-white">
+            <div class="col-3 align-center text-center mt-4">
+                <button type="button" class="boton13 btn btn-light mb-2">Attr</button>
+                <br>
+
+
+                <input id="check1" type="checkbox" checked='true'>
+                <label for="check1">Check me</label></div>
+
+
+            <div class="append col-9 text-white ">
+                <h1>Atributos</h1>
+                <p>Haz Click en el boton para cambiar el atributo del Check</p>
+
+            </div>
+        </div>
+
+        <div class="fila8 row p-3 mb-2 bg-white text-dark">
+            <div class="col-3 align-center text-center mt-4">
+
+                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="boton14 btn btn-dark">val()</button>
+                    <button type="button" class="boton15 btn btn-dark ">val (attr)</button>
+                </div>
+            </div>
+            <div class=" col-9 text-dark ">
+                <h1 id="titulo">val() - val (attr)</h1>
+                <p>Haz Click en el boton val() para obtener por consola el contenido del selector.</p>
+                <p>Haz Click en el boton val(attr) si tu opción es Python.</p>
+
+                <select id="sel" name="sel">
+                    <!--Value="-1" Indica el valor por defecto del selector-->
+                    <option value="-1">*Seleccione lenguaje*</option>
+                    <option value="python">¡Es Python!</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="c">C++</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+            </div>
+        </div>
+        <div class="fila9 row p-3 mb-2 bg-dark text-white">
+            <div class="col-3 align-center text-center mt-4">
+                <button type="button" class="boton16 btn btn-light">Html</button></div>
+            <div class=" col-9 text-white ">
+                <h1>Html</h1>
+                <p class="link">Haz Click en el boton para reemplazar este parrafo por un link</p>
+            </div>
+        </div>
+
+
+        <div class="fila10 row p-3 mb-2 bg-white text-dark">
+            <div class="col-3 align-center text-center mt-4">
+                <button type="button" class="boton17 btn btn-dark">Text</button>
+                <!-- <h2 class="mt-5">Una breve descripción de ti:</h2> -->
+
+
+            </div>
+            <div class=" col-9 text-dark ">
+                <h1 id="titulo">.Text</h1>
+                <p>Haz Click en el boton para ingregar en este parrafo el contenido escrito en el cuadro que se encuentra a continuación.</p>
+                <textarea id="desc" class="col-9" name=desc></textarea><br>
+
+
+            </div>
+
+        </div>
+
+        <!-- AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT -->
+        <!-- AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT -->
+        <!-- AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT     AQUI PARTEN LOS SCRIPT -->
+
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.boton1').click(function() {
+                    $(".fila1 p").addClass("text-danger");
+                });
+                // tu código jquery aquí
+                $('.boton2').click(function() {
+                    $(".imagen1").slideToggle("slow");
+                });
+
+                $(".boton3").click(function() {
+                    $(".imagen1").slideUp("slow", function() {
+                        // Animation complete.
+                    });
+                });
+                $(".boton4").click(function() {
+                    $(".imagen1").slideDown("slow", function() {
+                        // Animation complete.
+                    });
+                });
+                $('.boton5').click(function() {
+                    $(".append").append("<p>¡Este es un nuevo parrafo!</p>");
+                });
+                $('.boton6').click(function() {
+                    $(".imagen2").show();
+                });
+                $('.boton7').click(function() {
+                    $(".imagen2").hide();
+                });
+                $('.boton8').click(function() {
+                    $(".imagen2").toggle();
+                });
+
+                $(".boton9").click(function() {
+                    $("#div").fadeIn("slow", function() {
+                        $("#span").fadeIn(100);
+                    });
+                    return false;
+                });
+                $(".boton10").click(function() {
+                    $("#div").fadeOut("slow", function() {
+                        $("#span").fadeIn(100);
+                    });
+                    return false;
+                });
+
+                $('.boton11').click(function() {
+                    $(".parrafo1").before($('#titulo'));
+
+
+                });
+                $('.boton12').click(function() {
+
+                    // $(".parrafo2").after(document.createTextNode("Probando la función after"));
+                    $(".parrafo2").after($('#titulo'));
+                });
+
+                ////Preguntar porque solo corre la primera vez
+                $('.boton13').click(function() {
+                    console.log($('#check1').attr('checked'))
+                    console.log($('#check1').prop('checked'))
+                    console.log($('#check1').is(':checked'))
+                    $("#check1").attr({
+                        checked: false,
+                    });
+                });
+
+                //Alternativa de uso Attr (solo se acepta mientras el atributo exista en el tag)
+                //Alternativa de uso Attr (solo se acepta mientras el atributo exista en el tag)
+
+                // $('.boton13').click(function() {
+                //     console.log($('#check1').attr('checked'))
+                //     console.log($('#check1').prop('checked'))
+                //     $("#check1").attr(
+                //         'checked', false
+                //     );
+                // });
+
+                $('.boton14').click(function() {
+                    console.log($('#sel').val())
+                });
+                $('.boton15').click(function() {
+                    $('#sel').val('python')
+                });
+
+
+                $('.boton16').click(function() {
+                    $('.fila9 p').html("<a href='https://www.nasa.gov/' class='text-white'>Usted ha reemplazado el parrafo por un link</a>");
+                });
+                $('.boton17').click(function() {
+                    $('.fila10 p').text($('#desc').val());
+                });
+            });
+        </script>
+
+</body>
+
+</html>
